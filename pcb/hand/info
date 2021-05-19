@@ -1,0 +1,178 @@
+{
+  "uuid": "fcf371f6639cfa98ed904c2ae55e7e67",
+  "path": "Offline/hand",
+  "name": "hand",
+  "content": "",
+  "created_at": "2021-05-18 13:48:13",
+  "updated_at": "2021-05-18 15:38:52",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "c24701f0469989114769b752e39b5b15",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "fee3186e847b42ecb0244c6d4d6aaef8": 1,
+        "19b8e2ba0b53486f8debdedc9c8f69ce": 1,
+        "ce70de552ed548b48c23e92cf1d6ab2e": 1,
+        "92b7ba39901d4a33b3a4937097212d0a": 1,
+        "65369c98b8634c5c4198698703ee0f08": 1,
+        "ec006d93e45055dfc7306f978db6c800": 1,
+        "69615fe690c54df6afb90f1adf2df97c": 1,
+        "fa80300355e044d4865e1d21c18675d5": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "NRF2401L",
+          1,
+          "NRF2401L",
+          "U1",
+          {
+            "BOM_Manufacturer Part": "nrf2401l",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "390cc8444b3641e5ac87e7e71e4e1431",
+            "uuid": "19b8e2ba0b53486f8debdedc9c8f69ce"
+          }
+        ],
+        [
+          "330",
+          1,
+          "RES-TH_BD1.8-L3.2-P7.20-D0.4",
+          "R1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C337130",
+            "BOM_Manufacturer": "FlyWin",
+            "BOM_Manufacturer Part": "MF1/8W ±1% 330Ω OTB5",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "97467e7cb6374f7e9dd7fc644a47cfb1",
+            "uuid": "92b7ba39901d4a33b3a4937097212d0a"
+          }
+        ],
+        [
+          "φ3 Red",
+          1,
+          "LED-TH_BD3.5-P2.54-FD",
+          "LED1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "KENTO",
+            "BOM_Manufacturer Part": "φ3 Red",
+            "BOM_Supplier Part": "C39928",
+            "puuid": "5c060cfdedf0465e98387f9b971c0cbb",
+            "uuid": "65369c98b8634c5c4198698703ee0f08"
+          }
+        ],
+        [
+          "MPU6050",
+          1,
+          "MPU6050",
+          "P1",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "523d70a499074fc2bc28d70ae55273d1",
+            "uuid": "69615fe690c54df6afb90f1adf2df97c"
+          }
+        ],
+        [
+          "SLIDE_SWITCH",
+          1,
+          "SPDT",
+          "SW1",
+          {
+            "BOM_Manufacturer Part": "slide switch",
+            "BOM_Supplier Part": "401-1999-1-ND",
+            "BOM_Supplier": "",
+            "puuid": "7001ff39700f4d1581e46baf75803915",
+            "uuid": "ce70de552ed548b48c23e92cf1d6ab2e"
+          }
+        ],
+        [
+          "10uF",
+          1,
+          "CAP-TH_BD4.0-P1.50-D0.8-FD",
+          "C1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "ValuePro",
+            "BOM_Manufacturer Part": "electrolytic capacitor10UF50V",
+            "BOM_Supplier Part": "C32856",
+            "puuid": "4e77392dad62499487a3be9d0c41e95e",
+            "uuid": "ec006d93e45055dfc7306f978db6c800"
+          }
+        ],
+        [
+          "9V Battery cable connector",
+          1,
+          "9V BATERRY CABLE CONNECTOR",
+          "BAT1",
+          {
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "17d8e1daf365478eb6755d8c62a5a340",
+            "uuid": "fa80300355e044d4865e1d21c18675d5"
+          }
+        ],
+        [
+          "Arduino_Nano_Header",
+          1,
+          "DIP-30_L43.18-W15.24-ARDUINONANO",
+          "J1",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "0476c63fa99e4a998187e5a274bdf1f1",
+            "uuid": "fee3186e847b42ecb0244c6d4d6aaef8"
+          }
+        ]
+      ],
+      "updateTime": 1621326494,
+      "createTime": 1621323216,
+      "histories": [],
+      "created_at": "2021-05-18 14:33:36",
+      "updated_at": "2021-05-18 15:28:14"
+    },
+    {
+      "uuid": "d865b7f8e1a14c2ca89045e61d127373",
+      "puuid": "fcf371f6639cfa98ed904c2ae55e7e67",
+      "title": "PCB_hand",
+      "filename": "PCB_hand.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "390cc8444b3641e5ac87e7e71e4e1431": 1,
+        "97467e7cb6374f7e9dd7fc644a47cfb1": 1,
+        "5c060cfdedf0465e98387f9b971c0cbb": 1,
+        "523d70a499074fc2bc28d70ae55273d1": 1,
+        "7001ff39700f4d1581e46baf75803915": 1,
+        "4e77392dad62499487a3be9d0c41e95e": 1,
+        "0476c63fa99e4a998187e5a274bdf1f1": 1,
+        "17d8e1daf365478eb6755d8c62a5a340": 1
+      },
+      "BOM": [],
+      "updateTime": 1621327132,
+      "createTime": 1621327132,
+      "histories": [],
+      "created_at": "2021-05-18 15:38:52",
+      "updated_at": "2021-05-18 15:38:52"
+    }
+  ],
+  "sort": [],
+  "title": "hand",
+  "foldername": "hand",
+  "schfilename": "hand.json",
+  "schfilemtime": 1621326494889
+}
