@@ -40,6 +40,10 @@ void dmpDataReady(){
   mpuInterrupt = true;
 }
 
+int led = 3;
+unsigned long TX_delay_calib = 0;
+unsigned long led_delay_announce = 0;
+
 void setup(){
   #if I2CDEV_IMPLEMENTATION == I2CDEV_ARDUINO_WIRE
     Wire.begin();
@@ -71,10 +75,10 @@ void setup(){
   Serial.println(F("Initializing DMP..."));
   devStatus = mpu.dmpInitialize();
   
-    mpu.setXGyroOffset(290);
-    mpu.setYGyroOffset(100);
-    mpu.setZGyroOffset(-33);
-    mpu.setZAccelOffset(1992); // 1688 factory default for my test chip
+    mpu.setXGyroOffset(-414);
+    mpu.setYGyroOffset(91);
+    mpu.setZGyroOffset(-23);
+    mpu.setZAccelOffset(2032); // 1688 factory default for my test chip
     
 //      mpu.setXGyroOffset(290);
 //    mpu.setYGyroOffset(100);
@@ -100,10 +104,13 @@ void setup(){
     Serial.print(devStatus);
     Serial.println(F(")"));
   }
+
+  pinMode(led, OUTPUT);
 }
 
 
 void loop() { 
+
   if (!dmpReady) return;
   while (!mpuInterrupt && fifoCount < packetSize){      
   }
@@ -131,23 +138,43 @@ void loop() {
       float pitch = (ypr[1] * 180 / M_PI);
       float roll = (ypr[2] * 180 / M_PI);
     };
-
-    radio.stopListening();
     
     dataStruct ypr;
+
+    if (millis() - TX_delay_calib < 15000){
+      if(millis() - led_delay_announce > 200){
+        Serial.print("MPU lib at: ");
+        Serial.print(millis());
+        Serial. print (" With ypr: "); 
+        Serial.print(ypr.yall);
+        Serial.print("  ");
+        Serial.print(ypr.pitch);
+        Serial.print("  ");
+        Serial.println(ypr.roll);
+        if(digitalRead(led) == LOW){
+          digitalWrite(led, HIGH);
+        } else {
+          digitalWrite(led, LOW);  
+        }
+        led_delay_announce = millis();
+      }
+    } else {
+      digitalWrite(led, HIGH);
+      radio.stopListening();
+      bool ok = radio.write(&ypr, sizeof(ypr));
+      if (ok){
+        Serial.print("ok with: ");
+        Serial.print(ypr.yall);
+        Serial.print("  ");
+        Serial.print(ypr.pitch);
+        Serial.print("  ");
+        Serial.print(ypr.roll);
+        Serial.println("...");
+      } else Serial.println("failed!");
+      radio.startListening();
+    }
     
-    bool ok = radio.write(&ypr, sizeof(ypr));
-    if (ok){
-      Serial.print("ok with: ");
-      Serial.print(ypr.yall);
-      Serial.print("  ");
-      Serial.print(ypr.pitch);
-      Serial.print("  ");
-      Serial.print(ypr.roll);
-      Serial.println("...");
-    } else Serial.println("failed!");
     mpu.resetFIFO();
-    radio.startListening();
 
   #endif
   }
