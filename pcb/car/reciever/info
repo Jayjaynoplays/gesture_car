@@ -1,0 +1,163 @@
+{
+  "uuid": "d709e5887615873f84762fe82178dbdd",
+  "path": "Offline/reciever",
+  "name": "reciever",
+  "content": "",
+  "created_at": "2021-05-22 13:34:09",
+  "updated_at": "2021-05-22 15:56:44",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "611a8cb178b83d514ffb1070d6bd6da2",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "19b8e2ba0b53486f8debdedc9c8f69ce": 1,
+        "fac22fc83a8b4b9ab00c71b9c19e26e1": 2,
+        "f98395b204f54fb2b9ef27632222c819": 1,
+        "468b4108013743de9e0fbdaba829dd4f": 1,
+        "cc26435841d04025b943e9f4e2083c4f": 1,
+        "cf2f2d4c326448669006ffb811cd6b23": 1,
+        "4ac3abae759048f3970b33abc2e9b9fd": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "MY RESITOR 2123",
+          1,
+          "MY RESISTOR 2123",
+          "U7",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "7d9d11969e5a442d9841623bf0c13166",
+            "uuid": "4ac3abae759048f3970b33abc2e9b9fd"
+          }
+        ],
+        [
+          "NRF2401L",
+          1,
+          "NRF2401L",
+          "U2",
+          {
+            "BOM_Manufacturer Part": "nrf2401l",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "390cc8444b3641e5ac87e7e71e4e1431",
+            "uuid": "19b8e2ba0b53486f8debdedc9c8f69ce"
+          }
+        ],
+        [
+          "Arduino Mega 2560",
+          1,
+          "ARDUINO MEGA 2560",
+          "U1",
+          {
+            "BOM_Manufacturer Part": "ARDUINO MEGA",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "15be3fc5f6d647ec9dfd0a9e3c7c508b",
+            "uuid": "468b4108013743de9e0fbdaba829dd4f"
+          }
+        ],
+        [
+          "button",
+          1,
+          "BUTTON DTS-6",
+          "U6",
+          {
+            "BOM_Manufacturer Part": "DTS-6(2)",
+            "BOM_Supplier Part": "78-1150",
+            "BOM_Supplier": "Rapid",
+            "puuid": "47af94b34c484841ad290d9900ccd38e",
+            "uuid": "cc26435841d04025b943e9f4e2083c4f"
+          }
+        ],
+        [
+          "led  3mm",
+          1,
+          "LED_RED_5MM",
+          "LED1",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "Red LED 3mm",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "SparkFun",
+            "puuid": "aeae0459299c440b92ac9f339f99856a",
+            "uuid": "cf2f2d4c326448669006ffb811cd6b23"
+          }
+        ],
+        [
+          "10UF",
+          1,
+          "10UF 35V MICRO 7MM ELEC CAPACITOR",
+          "U5",
+          {
+            "BOM_Manufacturer Part": "New SchematicLib",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "fe31dba0c5d5435295096ed1b2666500",
+            "uuid": "f98395b204f54fb2b9ef27632222c819"
+          }
+        ],
+        [
+          "2.54_4PIN",
+          2,
+          "2.54 4PIN",
+          "U3,U4",
+          {
+            "BOM_Manufacturer Part": "2.54 4PIN",
+            "puuid": "714407086fb248909d163c150745cbc5",
+            "uuid": "fac22fc83a8b4b9ab00c71b9c19e26e1"
+          }
+        ]
+      ],
+      "updateTime": 1621667898,
+      "createTime": 1621666866,
+      "histories": [],
+      "created_at": "2021-05-22 14:01:06",
+      "updated_at": "2021-05-22 14:18:18"
+    },
+    {
+      "uuid": "92e8f2eebba38f2a7e5ba4d4f795c216",
+      "puuid": "d709e5887615873f84762fe82178dbdd",
+      "title": "PCB_reciever_2",
+      "filename": "PCB_reciever_2.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "7d9d11969e5a442d9841623bf0c13166": 1,
+        "390cc8444b3641e5ac87e7e71e4e1431": 1,
+        "47af94b34c484841ad290d9900ccd38e": 1,
+        "aeae0459299c440b92ac9f339f99856a": 1,
+        "fe31dba0c5d5435295096ed1b2666500": 1,
+        "714407086fb248909d163c150745cbc5": 2,
+        "15be3fc5f6d647ec9dfd0a9e3c7c508b": 1
+      },
+      "BOM": [],
+      "updateTime": 1621673804,
+      "createTime": 1621668481,
+      "histories": [],
+      "created_at": "2021-05-22 14:28:01",
+      "updated_at": "2021-05-22 15:56:44"
+    }
+  ],
+  "sort": [],
+  "title": "reciever",
+  "foldername": "reciever",
+  "schfilename": "reciever.json",
+  "schfilemtime": 1621667898527
+}

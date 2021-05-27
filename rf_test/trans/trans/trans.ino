@@ -8,7 +8,7 @@ const uint64_t pipes[2] = {0xF0F0F0F0E1LL, 0xF0F0F0F0D2LL};
 
 void setup(void)
 {
-  Serial.begin(9600);
+  Serial.begin(115200);
   Serial.println("RF24/examples/GettingStarted");
 
   radio.begin();

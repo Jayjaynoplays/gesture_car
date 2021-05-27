@@ -1,0 +1,42 @@
+{
+  "uuid": "d6119e985c1e8fd16daa85b2240ba526",
+  "path": "Offline/PCB_hand_config",
+  "name": "PCB_hand_config",
+  "content": "",
+  "created_at": "2021-05-19 16:11:09",
+  "updated_at": "2021-05-19 16:11:10",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "b75bf4746aea7ea82d78075680a3e317",
+      "puuid": "d6119e985c1e8fd16daa85b2240ba526",
+      "title": "PCB_hand",
+      "filename": "PCB_hand.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "390cc8444b3641e5ac87e7e71e4e1431": 1,
+        "97467e7cb6374f7e9dd7fc644a47cfb1": 1,
+        "5c060cfdedf0465e98387f9b971c0cbb": 1,
+        "523d70a499074fc2bc28d70ae55273d1": 1,
+        "7001ff39700f4d1581e46baf75803915": 1,
+        "4e77392dad62499487a3be9d0c41e95e": 1,
+        "0476c63fa99e4a998187e5a274bdf1f1": 1,
+        "17d8e1daf365478eb6755d8c62a5a340": 1
+      },
+      "BOM": [],
+      "updateTime": 1621415470,
+      "createTime": 1621415470,
+      "histories": [],
+      "created_at": "2021-05-19 16:11:10",
+      "updated_at": "2021-05-19 16:11:10"
+    }
+  ],
+  "sort": [],
+  "title": "PCB_hand_config",
+  "foldername": "PCB_hand_config",
+  "schfilename": "PCB_hand_config.json",
+  "schfilemtime": 1621415470790.4634
+}
